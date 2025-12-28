@@ -7,6 +7,7 @@ declare global {
         icon: string;
         width?: string;
         'stroke-width'?: string;
+        fill?: string;
       };
     }
   }
