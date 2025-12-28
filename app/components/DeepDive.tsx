@@ -15,83 +15,147 @@ declare global {
 
 const DeepDive = () => {
   return (
-    <section className="py-24 bg-[#0F0E17]">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="mb-12">
-          <h2 className="text-2xl font-semibold tracking-tight text-white">Engineered for details.</h2>
-          <p className="text-slate-400 mt-2">Everything you need to catalogue your cinematic journey.</p>
+    <section className="py-24 bg-gradient-to-b from-[#0F0E17] to-[#0a0910] relative overflow-hidden">
+      {/* Background elements */}
+      <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-radial-gradient from-violet-900/20 to-transparent rounded-full blur-3xl"></div>
+      
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <span className="inline-block bg-gradient-to-r from-violet-500 to-fuchsia-500 text-transparent bg-clip-text text-sm font-medium mb-3">DEEP DIVE</span>
+          <h2 className="text-4xl font-bold tracking-tight text-white mb-4">Advanced Analytics at Your Fingertips</h2>
+          <p className="text-slate-400 text-lg">Uncover insights and trends in your movie ratings with our powerful analytics dashboard.</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-auto md:h-[500px]">
-          
-          {/* Large Card: Analytics */}
-          <div className="col-span-1 md:col-span-2 row-span-2 bg-[#111019] rounded-2xl border border-white/5 p-8 flex flex-col justify-between overflow-hidden relative hover:border-white/10 transition-colors">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 h-auto">
+          {/* Main Analytics Card */}
+          <div className="lg:col-span-8 bg-[#0B0A13] rounded-2xl border border-white/5 p-8 flex flex-col overflow-hidden relative group hover:border-white/10 transition-all duration-500 hover:shadow-2xl hover:shadow-violet-900/20">
+            <div className="absolute inset-0 bg-gradient-to-br from-violet-900/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             <div className="relative z-10">
-              <h3 className="font-semibold text-white mb-2">Detailed Analytics</h3>
-              <p className="text-xs text-slate-400">Visualize your ratings breakdown.</p>
+              <div className="flex items-center justify-between mb-8">
+                <div>
+                  <h3 className="text-xl font-semibold text-white">Rating Analytics</h3>
+                  <p className="text-sm text-slate-400 mt-1">Your personalized movie rating statistics</p>
+                </div>
+                <div className="px-3 py-1 rounded-full bg-violet-500/10 text-violet-400 text-xs font-medium flex items-center">
+                  <span className="w-2 h-2 rounded-full bg-violet-400 mr-2 animate-pulse"></span>
+                  Live Data
+                </div>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div className="bg-[#111019] p-4 rounded-xl border border-white/5">
+                  <p className="text-slate-400 text-sm mb-1">Total Rated</p>
+                  <p className="text-3xl font-bold text-white">247 <span className="text-sm text-green-400 ml-1">+12%</span></p>
+                </div>
+                <div className="bg-[#111019] p-4 rounded-xl border border-white/5">
+                  <p className="text-slate-400 text-sm mb-1">Avg. Rating</p>
+                  <p className="text-3xl font-bold text-white">7.8 <span className="text-sm text-amber-400 ml-1">/10</span></p>
+                </div>
+                <div className="bg-[#111019] p-4 rounded-xl border border-white/5">
+                  <p className="text-slate-400 text-sm mb-1">Favorite Genre</p>
+                  <div className="flex items-center">
+                    <div className="w-2 h-2 rounded-full bg-fuchsia-500 mr-2"></div>
+                    <p className="text-lg font-semibold text-white">Sci-Fi</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="space-y-5">
+                {[
+                  { name: 'Action', value: 75, color: 'bg-violet-500', shadow: 'shadow-[0_0_15px_rgba(139,92,246,0.4)]' },
+                  { name: 'Drama', value: 45, color: 'bg-fuchsia-500', shadow: 'shadow-[0_0_15px_rgba(236,72,153,0.4)]' },
+                  { name: 'Sci-Fi', value: 90, color: 'bg-indigo-500', shadow: 'shadow-[0_0_15px_rgba(99,102,241,0.4)]' },
+                  { name: 'Comedy', value: 60, color: 'bg-blue-500', shadow: 'shadow-[0_0_15px_rgba(59,130,246,0.4)]' },
+                  { name: 'Documentary', value: 30, color: 'bg-cyan-500', shadow: 'shadow-[0_0_15px_rgba(6,182,212,0.4)]' }
+                ].map((item, index) => (
+                  <div key={index} className="group">
+                    <div className="flex items-center justify-between mb-1.5">
+                      <span className="text-xs font-medium text-slate-400">{item.name}</span>
+                      <span className="text-xs font-mono text-slate-500">{item.value}%</span>
+                    </div>
+                    <div className="h-2 bg-[#1D1C26] rounded-full overflow-hidden">
+                      <div 
+                        className={`h-full rounded-full ${item.color} ${item.shadow} transition-all duration-1000 ease-out`}
+                        style={{ width: `${item.value}%` }}
+                      ></div>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
             
-            <div className="mt-8 space-y-4">
-              {/* Chart Mockup */}
-              <div className="flex items-center gap-3">
-                <span className="text-[10px] w-12 text-slate-500 font-medium">Action</span>
-                <div className="h-1.5 w-full bg-[#1D1C26] rounded-full overflow-hidden">
-                  <div className="h-full bg-violet-500 w-[75%] shadow-[0_0_10px_rgba(139,92,246,0.5)]"></div>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <span className="text-[10px] w-12 text-slate-500 font-medium">Drama</span>
-                <div className="h-1.5 w-full bg-[#1D1C26] rounded-full overflow-hidden">
-                  <div className="h-full bg-fuchsia-500 w-[45%] shadow-[0_0_10px_rgba(236,72,153,0.5)]"></div>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <span className="text-[10px] w-12 text-slate-500 font-medium">Sci-Fi</span>
-                <div className="h-1.5 w-full bg-[#1D1C26] rounded-full overflow-hidden">
-                  <div className="h-full bg-indigo-500 w-[90%] shadow-[0_0_10px_rgba(99,102,241,0.5)]"></div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="absolute bottom-0 right-0 p-8 opacity-[0.03]">
-              <iconify-icon icon="lucide:bar-chart-2" width="140"></iconify-icon>
+            <div className="absolute -bottom-10 -right-10 opacity-10 group-hover:opacity-20 transition-opacity duration-500">
+              <iconify-icon icon="lucide:bar-chart-2" width="180"></iconify-icon>
             </div>
           </div>
 
-          {/* Small Card: Privacy */}
-          <div className="col-span-1 md:col-span-2 bg-[#111019] rounded-2xl border border-white/5 p-6 flex flex-col justify-center relative overflow-hidden group hover:bg-[#151520] transition-colors">
-            <div className="flex items-start justify-between relative z-10">
-              <div>
-                <h3 className="font-semibold text-white mb-1">Local First</h3>
-                <p className="text-xs text-slate-400 max-w-xs leading-relaxed">
-                  No servers. No accounts. Your data lives securely in your browser&apos;s Local Storage.
+          {/* Side Cards */}
+          <div className="lg:col-span-4 space-y-6">
+            {/* Data Privacy Card */}
+            <div className="bg-[#0B0A13] rounded-2xl border border-white/5 p-6 relative overflow-hidden group hover:border-violet-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-violet-900/10">
+              <div className="absolute inset-0 bg-gradient-to-br from-violet-900/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="relative z-10">
+                <div className="flex items-start justify-between">
+                  <div className="w-10 h-10 rounded-lg bg-violet-500/10 flex items-center justify-center text-violet-400 mb-4">
+                    <iconify-icon icon="lucide:shield-check" width="20"></iconify-icon>
+                  </div>
+                  <div className="w-8 h-8 rounded-full bg-[#1D1C26] flex items-center justify-center text-slate-500 group-hover:text-violet-400 transition-colors">
+                    <iconify-icon icon="lucide:arrow-up-right" width="14"></iconify-icon>
+                  </div>
+                </div>
+                <h3 className="font-semibold text-white text-lg mb-2">Your Data, Your Control</h3>
+                <p className="text-sm text-slate-400 leading-relaxed">
+                  All your ratings are stored locally in your browser. No cloud, no accounts, no tracking. 100% private.
                 </p>
               </div>
-              <div className="w-10 h-10 rounded-full bg-[#1D1C26] flex items-center justify-center text-violet-400 group-hover:scale-110 group-hover:text-white group-hover:bg-violet-600 transition-all duration-300">
-                <iconify-icon icon="lucide:shield-check" width="20"></iconify-icon>
+            </div>
+
+            {/* Export Card */}
+            <div className="bg-[#0B0A13] rounded-2xl border border-white/5 p-6 relative overflow-hidden group hover:border-fuchsia-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-fuchsia-900/10">
+              <div className="absolute inset-0 bg-gradient-to-br from-fuchsia-900/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="relative z-10">
+                <div className="w-10 h-10 rounded-lg bg-fuchsia-500/10 flex items-center justify-center text-fuchsia-400 mb-4">
+                  <iconify-icon icon="lucide:file-json" width="18"></iconify-icon>
+                </div>
+                <h3 className="font-semibold text-white text-lg mb-2">Export & Backup</h3>
+                <p className="text-sm text-slate-400 leading-relaxed mb-4">
+                  Export your entire collection to JSON or CSV for backup or analysis.
+                </p>
+                <button className="inline-flex items-center text-sm font-medium text-fuchsia-400 hover:text-fuchsia-300 transition-colors">
+                  Export Data
+                  <iconify-icon icon="lucide:arrow-right" width="14" className="ml-1"></iconify-icon>
+                </button>
+              </div>
+            </div>
+
+            {/* Custom Fields Card */}
+            <div className="relative rounded-2xl overflow-hidden group">
+              <div className="absolute inset-0 bg-gradient-to-br from-violet-600/30 to-fuchsia-600/30 opacity-70 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+              <div className="relative z-10 p-6">
+                <div className="flex justify-between items-start mb-6">
+                  <div>
+                    <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-white mb-3">
+                      <iconify-icon icon="lucide:sliders" width="18"></iconify-icon>
+                    </div>
+                    <h3 className="font-semibold text-white text-lg mb-1">Custom Fields</h3>
+                    <p className="text-sm text-white/80">Tailor your rating experience</p>
+                  </div>
+                  <div className="px-2 py-1 rounded-full bg-white/10 text-white/80 text-xs font-medium">
+                    New
+                  </div>
+                </div>
+                <div className="grid grid-cols-2 gap-2">
+                  {['Text', 'Number', 'Date', 'Dropdown', 'Rating', '+ More'].map((field, i) => (
+                    <div key={i} className="bg-white/5 backdrop-blur-sm rounded-lg p-2 text-center text-xs font-medium text-white/80 hover:bg-white/10 transition-colors cursor-pointer">
+                      {field}
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
-
-          {/* Small Card: Import/Export */}
-          <div className="col-span-1 bg-[#111019] rounded-2xl border border-white/5 p-6 flex flex-col justify-end relative group hover:border-violet-500/20 transition-colors">
-            <div className="absolute top-6 left-6 w-8 h-8 rounded border border-white/10 bg-[#1D1C26] flex items-center justify-center text-slate-400 group-hover:text-fuchsia-400 transition-colors">
-              <iconify-icon icon="lucide:file-json" width="16"></iconify-icon>
-            </div>
-            <h3 className="font-semibold text-white text-sm mb-1">JSON Export</h3>
-            <p className="text-[10px] text-slate-500">Backup your data instantly.</p>
-          </div>
-
-          {/* Small Card: Custom Fields */}
-          <div className="col-span-1 bg-gradient-to-br from-violet-900 to-indigo-900 rounded-2xl border border-white/10 p-6 flex flex-col justify-end relative overflow-hidden">
-            <div className="absolute inset-0 bg-grid opacity-20"></div>
-            <div className="absolute top-6 right-6 text-white/40">
-              <iconify-icon icon="lucide:plus" width="20"></iconify-icon>
-            </div>
-            <h3 className="font-semibold text-white text-sm mb-1 relative z-10">7 Field Types</h3>
-            <p className="text-[10px] text-white/60 relative z-10">Sliders, Date, Dropdowns &amp; more.</p>
-          </div>
-
         </div>
       </div>
     </section>
