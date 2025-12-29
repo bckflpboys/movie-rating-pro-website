@@ -23,10 +23,10 @@ const Navbar = () => {
           </div>
           <span className="font-bold text-[#C39EFF] tracking-tight text-lg">MOVIE RATING PRO</span>
         </div>
-        
+
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-[#B2FFD6]">
-          <a href="#features" className="hover:text-[#C39EFF] transition-colors">Features</a>
-          <a href="#how-it-works" className="hover:text-[#C39EFF] transition-colors">How it Works</a>
+          <a href="/#features" className="hover:text-[#C39EFF] transition-colors">Features</a>
+          <a href="/how-it-works" className="hover:text-[#C39EFF] transition-colors">How it Works</a>
           <a href="#privacy" className="hover:text-[#C39EFF] transition-colors">Privacy</a>
         </div>
 
