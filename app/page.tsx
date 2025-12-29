@@ -7,6 +7,7 @@ import UseCases from "./components/UseCases";
 import CreatorShowcase from "./components/CreatorShowcase";
 import CTA from "./components/CTA";
 import Footer from "./components/Footer";
+import PromoPopup from "./components/PromoPopup";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <CreatorShowcase />
       <CTA />
       <Footer />
+      <PromoPopup />
     </main>
   );
 }

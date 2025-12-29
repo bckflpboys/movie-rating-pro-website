@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import TopBanner from '../components/TopBanner';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import PromoPopup from '../components/PromoPopup';
 
 declare global {
     namespace JSX {
@@ -119,8 +120,8 @@ const HowItWorks = () => {
                                 key={feature.id}
                                 onClick={() => setActiveTab(feature.id)}
                                 className={`p-6 rounded-xl border transition-all duration-300 ${activeTab === feature.id
-                                        ? 'bg-[#111019] border-[#C39EFF]/50 shadow-lg shadow-[#C39EFF]/20'
-                                        : 'bg-[#0B0A13] border-white/5 hover:border-white/10'
+                                    ? 'bg-[#111019] border-[#C39EFF]/50 shadow-lg shadow-[#C39EFF]/20'
+                                    : 'bg-[#0B0A13] border-white/5 hover:border-white/10'
                                     }`}
                             >
                                 <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${feature.color} flex items-center justify-center mb-4 shadow-lg`}>
@@ -692,6 +693,7 @@ const HowItWorks = () => {
             </section>
 
             <Footer />
+            <PromoPopup />
         </main>
     );
 };
