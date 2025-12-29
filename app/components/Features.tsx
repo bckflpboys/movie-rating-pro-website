@@ -42,7 +42,7 @@ const Features = () => {
             </div>
             <h3 className="text-xl font-bold text-[#C39EFF] mb-3">TRENDING MOVIES</h3>
             <p className="text-[#B2FFD6]/80 leading-relaxed">
-              Discover what's popular with a built-in carousel of trending movies, powered by the TMDB API.
+              Discover what&apos;s popular with a built-in carousel of trending movies, powered by the TMDB API.
             </p>
           </div>
 

@@ -281,7 +281,7 @@ const HowItWorks = () => {
                                     Trending Movies Carousel
                                 </h2>
                                 <p className="text-lg text-slate-300 mb-6 leading-relaxed">
-                                    Browse the top 10 trending movies of the week, powered by The Movie Database (TMDB) API. Discover what's popular and rate them instantly.
+                                    Browse the top 10 trending movies of the week, powered by The Movie Database (TMDB) API. Discover what&apos;s popular and rate them instantly.
                                 </p>
                                 <div className="space-y-4">
                                     <div className="flex items-start gap-3">
@@ -308,7 +308,7 @@ const HowItWorks = () => {
                                         </div>
                                         <div>
                                             <h4 className="text-sm font-semibold text-white mb-1">Collapsible Section</h4>
-                                            <p className="text-sm text-slate-400">Save space when you don't need it</p>
+                                            <p className="text-sm text-slate-400">Save space when you don&apos;t need it</p>
                                         </div>
                                     </div>
                                 </div>
