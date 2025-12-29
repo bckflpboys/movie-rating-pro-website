@@ -29,18 +29,14 @@ const PromoPopup = () => {
         // Only run on client side
         if (!isMounted) return;
 
-        // Check if user has already seen the popup in this session
-        const hasSeenPopup = sessionStorage.getItem('devaura_popup_seen');
+        console.log('PromoPopup: Will show in 7 seconds...');
+        // Show popup after 7 seconds
+        const timer = setTimeout(() => {
+            console.log('PromoPopup: Showing now!');
+            setIsVisible(true);
+        }, 7000);
 
-        if (!hasSeenPopup) {
-            // Show popup after 7 seconds
-            const timer = setTimeout(() => {
-                setIsVisible(true);
-                sessionStorage.setItem('devaura_popup_seen', 'true');
-            }, 7000);
-
-            return () => clearTimeout(timer);
-        }
+        return () => clearTimeout(timer);
     }, [isMounted]);
 
     const handleClose = () => {
