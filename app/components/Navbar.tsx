@@ -29,10 +29,9 @@ const Navbar = ({ isBannerVisible }: NavbarProps) => {
     >
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <div className="flex items-center gap-4">
-          <div className="w-9 h-9 rounded-lg bg-[#B2FFD6] flex items-center justify-center text-black font-semibold tracking-tighter text-base shadow-lg shadow-[#B2FFD6]/30">
-            <iconify-icon icon="lucide:film" width="16"></iconify-icon>
-          </div>
-          <span className="font-bold text-[#C39EFF] tracking-tight text-lg">MOVIE RATING PRO</span>
+          <a href="/" className="block">
+            <img src="/mrp web logo.png" alt="Movie Rating Pro" className="h-14 w-auto" />
+          </a>
         </div>
 
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-[#B2FFD6]">
