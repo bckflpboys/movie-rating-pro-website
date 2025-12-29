@@ -28,12 +28,25 @@ const Hero = () => {
             </span>
             v2.0 Now Available
           </div>
-          
+
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white mb-6 leading-[1.1]">
             Rate movies with <br />
             <span className="text-[#C39EFF] drop-shadow-[0_0_8px_rgba(195,158,255,0.5)]">uncompromising precision.</span>
           </h1>
-          
+
+          <div className="flex items-center justify-center gap-2 mb-6">
+            <span className="text-xs text-slate-500">by</span>
+            <a
+              href="https://devaura.co.za"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-semibold text-[#C39EFF] hover:text-[#B2FFD6] transition-colors flex items-center gap-1"
+            >
+              Devaura
+              <iconify-icon icon="lucide:external-link" width="12"></iconify-icon>
+            </a>
+          </div>
+
           <p className="text-lg text-[#B2FFD6] max-w-xl mx-auto leading-relaxed mb-8">
             A powerful Chrome extension for cinephiles. Auto-detect titles, customize dark-themed rating criteria, and build your database locally.
           </p>
@@ -51,7 +64,7 @@ const Hero = () => {
 
         <div className="relative max-w-4xl mx-auto">
           <div className="absolute -inset-1 bg-gradient-to-r from-violet-600/30 to-fuchsia-600/30 rounded-2xl blur opacity-30"></div>
-          
+
           <div className="relative bg-[#0F0E17] rounded-xl border border-white/10 shadow-2xl overflow-hidden ring-1 ring-white/5">
             <div className="h-9 bg-[#0B0A13] border-b border-white/5 flex items-center px-4 gap-2">
               <div className="flex gap-1.5">
@@ -79,7 +92,7 @@ const Hero = () => {
                     <div className="text-[10px] text-violet-400">Auto-detected</div>
                   </div>
                 </div>
-                
+
                 {/* Rating Slider 1 */}
                 <div className="space-y-2">
                   <div className="flex justify-between text-[10px] font-medium text-slate-400">
