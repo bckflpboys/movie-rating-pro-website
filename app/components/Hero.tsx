@@ -26,7 +26,7 @@ const Hero = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#B2FFD6] opacity-75"></span>
               <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-[#B2FFD6]"></span>
             </span>
-            v2.0 Now Available
+            v1.0 Now Available
           </div>
 
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white mb-6 leading-[1.1]">

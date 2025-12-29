@@ -35,8 +35,9 @@ const TopBanner = () => {
                     <div className="flex-1 flex items-center justify-center gap-3 text-center">
                         <p className="text-sm font-medium">
                             <span className="hidden md:inline">Love this extension? </span>
-                            <span className="font-bold">Contact us to create your website & browser extensions</span>
-                            <span className="hidden sm:inline"> — Professional development by Devaura</span>
+                            <span className="font-bold hidden sm:inline">Contact us to create your website & browser extensions</span>
+                            <span className="font-bold sm:hidden">Build your own extension!</span>
+                            <span className="hidden lg:inline"> — Professional development by Devaura</span>
                         </p>
                         <a
                             href="https://devaura.co.za/#contact"
