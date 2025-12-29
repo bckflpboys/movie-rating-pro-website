@@ -18,8 +18,17 @@ declare global {
 const PromoPopup = () => {
     const [isVisible, setIsVisible] = useState(false);
     const [isClosing, setIsClosing] = useState(false);
+    const [isMounted, setIsMounted] = useState(false);
+
+    // Ensure component only renders on client side
+    useEffect(() => {
+        setIsMounted(true);
+    }, []);
 
     useEffect(() => {
+        // Only run on client side
+        if (!isMounted) return;
+
         // Check if user has already seen the popup in this session
         const hasSeenPopup = sessionStorage.getItem('devaura_popup_seen');
 
@@ -32,7 +41,7 @@ const PromoPopup = () => {
 
             return () => clearTimeout(timer);
         }
-    }, []);
+    }, [isMounted]);
 
     const handleClose = () => {
         setIsClosing(true);
@@ -42,7 +51,8 @@ const PromoPopup = () => {
         }, 300); // Match animation duration
     };
 
-    if (!isVisible) return null;
+    // Don't render anything during SSR or if not visible
+    if (!isMounted || !isVisible) return null;
 
     return (
         <>
