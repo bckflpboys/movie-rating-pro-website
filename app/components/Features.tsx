@@ -15,17 +15,17 @@ declare global {
 
 const Features = () => {
   return (
-    <section id="features" className="py-24 border-t border-[#B2FFD6]/10 bg-black">
+    <section id="features" className="py-16 md:py-24 border-t border-[#B2FFD6]/10 bg-black">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-3xl font-bold tracking-tight text-[#B2FFD6] mb-4">POWERFUL FEATURES, BUILT FOR CINEPHILES</h2>
+        <div className="text-center max-w-2xl mx-auto mb-10 md:mb-16">
+          <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-[#B2FFD6] mb-4">POWERFUL FEATURES, BUILT FOR CINEPHILES</h2>
           <div className="h-1 w-20 bg-[#C39EFF] mx-auto mb-6"></div>
           <p className="text-[#C39EFF]/80">From automatic detection to advanced analytics, everything you need is right here.</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Feature 1: Auto-Detection */}
-          <div className="group p-8 rounded-2xl border border-[#B2FFD6]/10 bg-black/50 hover:bg-[#0a0a0a] hover:border-[#C39EFF]/30 transition-all duration-300 col-span-1 md:col-span-2 transform hover:-translate-y-1">
+          <div className="group p-8 rounded-2xl border border-[#B2FFD6]/10 bg-black/50 hover:bg-[#0a0a0a] hover:border-[#C39EFF]/30 transition-all duration-300 transform hover:-translate-y-1">
             <div className="w-12 h-12 rounded-xl bg-[#B2FFD6] flex items-center justify-center mb-6 text-black shadow-lg">
               <iconify-icon icon="lucide:scan-line" width="24" stroke-width="2"></iconify-icon>
             </div>
