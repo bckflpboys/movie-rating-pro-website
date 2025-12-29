@@ -15,24 +15,24 @@ declare global {
 
 const DeepDive = () => {
   return (
-    <section className="py-24 bg-gradient-to-b from-[#0F0E17] to-[#0a0910] relative overflow-hidden">
+    <section className="py-16 md:py-24 bg-gradient-to-b from-[#0F0E17] to-[#0a0910] relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-radial-gradient from-violet-900/20 to-transparent rounded-full blur-3xl"></div>
-      
+
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
           <span className="inline-block bg-gradient-to-r from-violet-500 to-fuchsia-500 text-transparent bg-clip-text text-sm font-medium mb-3">DEEP DIVE</span>
-          <h2 className="text-4xl font-bold tracking-tight text-white mb-4">Advanced Analytics at Your Fingertips</h2>
-          <p className="text-slate-400 text-lg">Uncover insights and trends in your movie ratings with our powerful analytics dashboard.</p>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white mb-4">Advanced Analytics at Your Fingertips</h2>
+          <p className="text-slate-400 text-base md:text-lg">Uncover insights and trends in your movie ratings with our powerful analytics dashboard.</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 h-auto">
           {/* Main Analytics Card */}
-          <div className="lg:col-span-8 bg-[#0B0A13] rounded-2xl border border-white/5 p-8 flex flex-col overflow-hidden relative group hover:border-white/10 transition-all duration-500 hover:shadow-2xl hover:shadow-violet-900/20">
+          <div className="lg:col-span-8 bg-[#0B0A13] rounded-2xl border border-white/5 p-6 md:p-8 flex flex-col overflow-hidden relative group hover:border-white/10 transition-all duration-500 hover:shadow-2xl hover:shadow-violet-900/20">
             <div className="absolute inset-0 bg-gradient-to-br from-violet-900/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             <div className="relative z-10">
-              <div className="flex items-center justify-between mb-8">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-8 gap-4 sm:gap-0">
                 <div>
                   <h3 className="text-xl font-semibold text-white">Rating Analytics</h3>
                   <p className="text-sm text-slate-400 mt-1">Your personalized movie rating statistics</p>
@@ -42,7 +42,7 @@ const DeepDive = () => {
                   Live Data
                 </div>
               </div>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                 <div className="bg-[#111019] p-4 rounded-xl border border-white/5">
                   <p className="text-slate-400 text-sm mb-1">Total Rated</p>
@@ -75,7 +75,7 @@ const DeepDive = () => {
                       <span className="text-xs font-mono text-slate-500">{item.value}%</span>
                     </div>
                     <div className="h-2 bg-[#1D1C26] rounded-full overflow-hidden">
-                      <div 
+                      <div
                         className={`h-full rounded-full ${item.color} ${item.shadow} transition-all duration-1000 ease-out`}
                         style={{ width: `${item.value}%` }}
                       ></div>
@@ -84,7 +84,7 @@ const DeepDive = () => {
                 ))}
               </div>
             </div>
-            
+
             <div className="absolute -bottom-10 -right-10 opacity-10 group-hover:opacity-20 transition-opacity duration-500">
               <iconify-icon icon="lucide:bar-chart-2" width="180"></iconify-icon>
             </div>
