@@ -15,7 +15,7 @@ declare global {
 
 const Hero = () => {
   return (
-    <section className="relative pt-32 pb-20 overflow-hidden bg-black">
+    <section className="relative pt-44 pb-20 overflow-hidden bg-black">
       <div className="absolute inset-0 bg-grid z-0 mask-image-gradient pointer-events-none"></div>
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-[#B2FFD6]/10 blur-[120px] rounded-full pointer-events-none z-0"></div>
 

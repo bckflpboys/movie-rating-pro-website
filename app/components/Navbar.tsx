@@ -15,7 +15,7 @@ declare global {
 
 const Navbar = () => {
   return (
-    <nav className="fixed w-full z-50 bg-black/90 backdrop-blur-md border-b border-[#B2FFD6]/20">
+    <nav className="fixed w-full z-50 bg-black/90 backdrop-blur-md border-b border-[#B2FFD6]/20" style={{ top: '52px' }}>
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <div className="flex items-center gap-4">
           <div className="w-9 h-9 rounded-lg bg-[#B2FFD6] flex items-center justify-center text-black font-semibold tracking-tighter text-base shadow-lg shadow-[#B2FFD6]/30">
