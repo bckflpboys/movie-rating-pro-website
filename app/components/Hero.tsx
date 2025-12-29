@@ -56,9 +56,9 @@ const Hero = () => {
               <span>Install Extension</span>
               <iconify-icon icon="lucide:arrow-right" width="16" stroke-width="2.5"></iconify-icon>
             </button>
-            <button className="w-full sm:w-auto h-12 px-8 rounded-full bg-black border border-[#C39EFF]/30 text-[#B2FFD6] text-sm font-medium hover:bg-[#0a0a0a] hover:border-[#C39EFF]/50 transition-all">
+            <a href="https://github.com/bckflpboys/movie-rating-pro#readme" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto h-12 px-8 rounded-full bg-black border border-[#C39EFF]/30 text-[#B2FFD6] text-sm font-medium hover:bg-[#0a0a0a] hover:border-[#C39EFF]/50 transition-all flex items-center justify-center">
               View Documentation
-            </button>
+            </a>
           </div>
         </div>
 

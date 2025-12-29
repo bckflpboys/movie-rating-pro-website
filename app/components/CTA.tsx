@@ -32,10 +32,10 @@ const CTA = () => {
             <iconify-icon icon="lucide:download" width="18" stroke-width="2"></iconify-icon>
             DOWNLOAD FOR CHROME
           </button>
-          <button className="h-12 px-8 rounded-full bg-transparent border border-[#C39EFF]/30 text-[#B2FFD6] text-sm font-medium hover:bg-[#C39EFF]/10 hover:border-[#C39EFF]/50 transition-all flex items-center gap-2">
+          <a href="https://github.com/bckflpboys/movie-rating-pro" target="_blank" rel="noopener noreferrer" className="h-12 px-8 rounded-full bg-transparent border border-[#C39EFF]/30 text-[#B2FFD6] text-sm font-medium hover:bg-[#C39EFF]/10 hover:border-[#C39EFF]/50 transition-all flex items-center gap-2">
             <iconify-icon icon="lucide:github" width="18" stroke-width="2"></iconify-icon>
             STAR ON GITHUB
-          </button>
+          </a>
         </div>
       </div>
     </section>

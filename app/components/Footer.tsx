@@ -51,9 +51,9 @@ const Footer = () => {
           </div>
 
           <div className="flex gap-8 text-sm font-medium">
-            <a href="#" className="text-[#C39EFF] hover:text-[#B2FFD6] transition-colors">DOCUMENTATION</a>
+            <a href="https://github.com/bckflpboys/movie-rating-pro#readme" target="_blank" rel="noopener noreferrer" className="text-[#C39EFF] hover:text-[#B2FFD6] transition-colors">DOCUMENTATION</a>
             <a href="/privacy-policy" className="text-[#C39EFF] hover:text-[#B2FFD6] transition-colors">PRIVACY POLICY</a>
-            <a href="#" className="text-[#C39EFF] hover:text-[#B2FFD6] transition-colors">LICENSE (MIT)</a>
+            <a href="https://github.com/bckflpboys/movie-rating-pro/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" className="text-[#C39EFF] hover:text-[#B2FFD6] transition-colors">LICENSE (MIT)</a>
           </div>
         </div>
 

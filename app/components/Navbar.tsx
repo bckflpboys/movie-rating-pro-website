@@ -41,7 +41,7 @@ const Navbar = ({ isBannerVisible }: NavbarProps) => {
         </div>
 
         <div className="flex items-center gap-4">
-          <a href="#" className="hidden sm:flex text-[#B2FFD6] hover:text-[#FFB2E6] transition-colors">
+          <a href="https://github.com/bckflpboys/movie-rating-pro" target="_blank" rel="noopener noreferrer" className="hidden sm:flex text-[#B2FFD6] hover:text-[#FFB2E6] transition-colors">
             <iconify-icon icon="lucide:github" width="22" stroke-width="1.5"></iconify-icon>
           </a>
           <button className="hidden sm:flex bg-[#C39EFF] hover:bg-[#9b7ecc] text-black text-sm font-bold px-5 py-2.5 rounded-full transition-all items-center gap-2">
@@ -71,7 +71,7 @@ const Navbar = ({ isBannerVisible }: NavbarProps) => {
           <div className="h-px bg-white/10"></div>
 
           <div className="flex flex-col gap-4">
-            <a href="#" className="flex items-center gap-2 text-[#B2FFD6] hover:text-[#FFB2E6] transition-colors">
+            <a href="https://github.com/bckflpboys/movie-rating-pro" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-[#B2FFD6] hover:text-[#FFB2E6] transition-colors">
               <iconify-icon icon="lucide:github" width="20" stroke-width="1.5"></iconify-icon>
               <span>View on GitHub</span>
             </a>
