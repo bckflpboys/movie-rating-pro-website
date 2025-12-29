@@ -51,12 +51,12 @@ const Hero = () => {
             A powerful Chrome extension for cinephiles. Auto-detect titles, customize dark-themed rating criteria, and build your database locally.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center gap-4">
-            <button className="h-12 px-8 rounded-full bg-[#C39EFF] hover:bg-[#9b7ecc] text-black text-sm font-bold transition-all flex items-center gap-2 shadow-lg shadow-[#C39EFF]/30">
+          <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+            <button className="w-full sm:w-auto h-12 px-8 rounded-full bg-[#C39EFF] hover:bg-[#9b7ecc] text-black text-sm font-bold transition-all flex items-center justify-center gap-2 shadow-lg shadow-[#C39EFF]/30">
               <span>Install Extension</span>
               <iconify-icon icon="lucide:arrow-right" width="16" stroke-width="2.5"></iconify-icon>
             </button>
-            <button className="h-12 px-8 rounded-full bg-black border border-[#C39EFF]/30 text-[#B2FFD6] text-sm font-medium hover:bg-[#0a0a0a] hover:border-[#C39EFF]/50 transition-all">
+            <button className="w-full sm:w-auto h-12 px-8 rounded-full bg-black border border-[#C39EFF]/30 text-[#B2FFD6] text-sm font-medium hover:bg-[#0a0a0a] hover:border-[#C39EFF]/50 transition-all">
               View Documentation
             </button>
           </div>

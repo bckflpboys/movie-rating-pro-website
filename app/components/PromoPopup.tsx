@@ -69,7 +69,7 @@ const PromoPopup = () => {
                     <div className="absolute -inset-1 bg-gradient-to-r from-violet-600 via-fuchsia-600 to-violet-600 rounded-2xl blur-xl opacity-50 animate-pulse"></div>
 
                     {/* Modal Content */}
-                    <div className="relative bg-gradient-to-br from-[#0F0E17] to-[#111019] rounded-2xl border border-[#C39EFF]/30 shadow-2xl overflow-hidden">
+                    <div className="relative bg-gradient-to-br from-[#0F0E17] to-[#111019] rounded-2xl border border-[#C39EFF]/30 shadow-2xl overflow-hidden max-h-[85vh] overflow-y-auto">
                         {/* Close Button */}
                         <button
                             onClick={handleClose}
@@ -80,7 +80,7 @@ const PromoPopup = () => {
                         </button>
 
                         {/* Header with Icon */}
-                        <div className="p-8 pb-6 text-center">
+                        <div className="p-6 md:p-8 pb-6 text-center">
                             <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-violet-600 to-fuchsia-600 mb-4 shadow-lg shadow-violet-500/50">
                                 <iconify-icon icon="lucide:sparkles" width="32" className="text-white"></iconify-icon>
                             </div>
@@ -95,7 +95,7 @@ const PromoPopup = () => {
                         </div>
 
                         {/* Features Grid */}
-                        <div className="px-8 pb-6">
+                        <div className="px-6 md:px-8 pb-6">
                             <div className="grid grid-cols-3 gap-3">
                                 <div className="p-3 rounded-lg bg-[#1a1820] border border-white/5 text-center">
                                     <iconify-icon icon="lucide:puzzle" width="24" className="text-violet-400 mb-1"></iconify-icon>
@@ -113,7 +113,7 @@ const PromoPopup = () => {
                         </div>
 
                         {/* Special Offer Badge */}
-                        <div className="px-8 pb-6">
+                        <div className="px-6 md:px-8 pb-6">
                             <div className="p-4 rounded-xl bg-gradient-to-r from-[#C39EFF]/20 to-[#B2FFD6]/20 border border-[#C39EFF]/30">
                                 <div className="flex items-center gap-3">
                                     <div className="w-10 h-10 rounded-lg bg-[#C39EFF] flex items-center justify-center flex-shrink-0">
@@ -128,13 +128,13 @@ const PromoPopup = () => {
                         </div>
 
                         {/* CTA Buttons */}
-                        <div className="px-8 pb-8">
-                            <div className="flex flex-col sm:flex-row gap-3">
+                        <div className="px-6 md:px-8 pb-8">
+                            <div className="flex flex-row gap-3">
                                 <a
                                     href="https://devaura.co.za"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex-1 h-12 px-6 rounded-full bg-[#C39EFF] hover:bg-[#9b7ecc] text-black text-sm font-bold transition-all flex items-center justify-center gap-2 shadow-lg shadow-[#C39EFF]/30"
+                                    className="flex-1 h-12 px-3 md:px-6 rounded-full bg-[#C39EFF] hover:bg-[#9b7ecc] text-black text-xs md:text-sm font-bold transition-all flex items-center justify-center gap-2 shadow-lg shadow-[#C39EFF]/30 whitespace-nowrap"
                                 >
                                     <span>Explore Services</span>
                                     <iconify-icon icon="lucide:arrow-right" width="16"></iconify-icon>
@@ -143,7 +143,7 @@ const PromoPopup = () => {
                                     href="https://devaura.co.za/#contact"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex-1 h-12 px-6 rounded-full bg-black border border-[#C39EFF]/30 text-[#B2FFD6] text-sm font-medium hover:bg-[#0a0a0a] hover:border-[#C39EFF]/50 transition-all flex items-center justify-center gap-2"
+                                    className="flex-1 h-12 px-3 md:px-6 rounded-full bg-black border border-[#C39EFF]/30 text-[#B2FFD6] text-xs md:text-sm font-medium hover:bg-[#0a0a0a] hover:border-[#C39EFF]/50 transition-all flex items-center justify-center gap-2 whitespace-nowrap"
                                 >
                                     <iconify-icon icon="lucide:mail" width="16"></iconify-icon>
                                     <span>Get in Touch</span>
@@ -152,7 +152,7 @@ const PromoPopup = () => {
                         </div>
 
                         {/* Footer */}
-                        <div className="px-8 pb-6 text-center">
+                        <div className="px-6 md:px-8 pb-6 text-center">
                             <p className="text-xs text-slate-500">
                                 Powered by{' '}
                                 <a
