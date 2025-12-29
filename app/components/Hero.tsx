@@ -15,35 +15,35 @@ declare global {
 
 const Hero = () => {
   return (
-    <section className="relative pt-32 pb-20 overflow-hidden">
+    <section className="relative pt-32 pb-20 overflow-hidden bg-black">
       <div className="absolute inset-0 bg-grid z-0 mask-image-gradient pointer-events-none"></div>
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-violet-900/20 blur-[120px] rounded-full pointer-events-none z-0"></div>
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-[#B2FFD6]/10 blur-[120px] rounded-full pointer-events-none z-0"></div>
 
       <div className="max-w-6xl mx-auto px-6 relative z-10">
         <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-violet-500/10 border border-violet-500/20 text-[10px] font-medium text-violet-300 mb-6 uppercase tracking-wider">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#B2FFD6]/10 border border-[#B2FFD6]/20 text-[10px] font-medium text-[#B2FFD6] mb-6 uppercase tracking-wider">
             <span className="relative flex h-1.5 w-1.5">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-violet-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-violet-500"></span>
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#B2FFD6] opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-[#B2FFD6]"></span>
             </span>
             v2.0 Now Available
           </div>
           
-          <h1 className="text-4xl md:text-6xl font-semibold tracking-tight text-white mb-6 leading-[1.1]">
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white mb-6 leading-[1.1]">
             Rate movies with <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-fuchsia-400">uncompromising precision.</span>
+            <span className="text-[#C39EFF] drop-shadow-[0_0_8px_rgba(195,158,255,0.5)]">uncompromising precision.</span>
           </h1>
           
-          <p className="text-lg text-slate-400 max-w-xl mx-auto leading-relaxed mb-8">
+          <p className="text-lg text-[#B2FFD6] max-w-xl mx-auto leading-relaxed mb-8">
             A powerful Chrome extension for cinephiles. Auto-detect titles, customize dark-themed rating criteria, and build your database locally.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center gap-4">
-            <button className="h-10 px-6 rounded-full bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white text-sm font-medium hover:opacity-90 transition-all flex items-center gap-2 shadow-lg shadow-violet-900/50">
+            <button className="h-12 px-8 rounded-full bg-[#C39EFF] hover:bg-[#9b7ecc] text-black text-sm font-bold transition-all flex items-center gap-2 shadow-lg shadow-[#C39EFF]/30">
               <span>Install Extension</span>
-              <iconify-icon icon="lucide:arrow-right" width="16" stroke-width="1.5"></iconify-icon>
+              <iconify-icon icon="lucide:arrow-right" width="16" stroke-width="2.5"></iconify-icon>
             </button>
-            <button className="h-10 px-6 rounded-full bg-[#151520] border border-white/10 text-slate-300 text-sm font-medium hover:bg-white/5 hover:text-white transition-all">
+            <button className="h-12 px-8 rounded-full bg-black border border-[#C39EFF]/30 text-[#B2FFD6] text-sm font-medium hover:bg-[#0a0a0a] hover:border-[#C39EFF]/50 transition-all">
               View Documentation
             </button>
           </div>
