@@ -1,5 +1,4 @@
-import TopBanner from "./components/TopBanner";
-import Navbar from "./components/Navbar";
+import HeaderWrapper from "./components/HeaderWrapper";
 import Hero from "./components/Hero";
 import Features from "./components/Features";
 import DeepDive from "./components/DeepDive";
@@ -12,8 +11,7 @@ import PromoPopup from "./components/PromoPopup";
 export default function Home() {
   return (
     <main>
-      <TopBanner />
-      <Navbar />
+      <HeaderWrapper />
       <Hero />
       <Features />
       <DeepDive />

@@ -1,8 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import TopBanner from '../components/TopBanner';
-import Navbar from '../components/Navbar';
+import HeaderWrapper from '../components/HeaderWrapper';
 import Footer from '../components/Footer';
 import PromoPopup from '../components/PromoPopup';
 
@@ -89,8 +88,7 @@ const HowItWorks = () => {
 
     return (
         <main className="bg-black min-h-screen">
-            <TopBanner />
-            <Navbar />
+            <HeaderWrapper />
 
             {/* Hero Section */}
             <section className="relative pt-44 pb-20 overflow-hidden">

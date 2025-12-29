@@ -15,9 +15,12 @@ declare global {
     }
 }
 
-const TopBanner = () => {
-    const [isVisible, setIsVisible] = useState(true);
+interface TopBannerProps {
+    isVisible: boolean;
+    onClose: () => void;
+}
 
+const TopBanner = ({ isVisible, onClose }: TopBannerProps) => {
     if (!isVisible) return null;
 
     return (
@@ -52,7 +55,7 @@ const TopBanner = () => {
 
                     {/* Right side - Close button */}
                     <button
-                        onClick={() => setIsVisible(false)}
+                        onClick={onClose}
                         className="w-8 h-8 rounded-lg hover:bg-white/20 flex items-center justify-center transition-colors group"
                         aria-label="Close banner"
                     >
