@@ -204,6 +204,66 @@ const Hero = () => {
             </div>
           </div>
         </div>
+
+        {/* Supported Platforms Section */}
+        <div className="mt-24 pt-10 border-t border-white/5">
+          <p className="text-center text-xs font-bold text-slate-500 mb-10 tracking-widest uppercase">
+            Works seamlessly on your favorite browsers & platforms
+          </p>
+
+          {/* Browsers */}
+          <div className="flex flex-wrap justify-center gap-8 md:gap-12 mb-12 opacity-60 hover:opacity-100 transition-opacity duration-500">
+            <div className="flex items-center gap-2 group">
+              <iconify-icon icon="simple-icons:googlechrome" width="24" className="text-slate-400 group-hover:text-white transition-colors"></iconify-icon>
+              <span className="text-sm font-medium text-slate-400 group-hover:text-white transition-colors">Chrome</span>
+            </div>
+            <div className="flex items-center gap-2 group">
+              <iconify-icon icon="simple-icons:microsoftedge" width="24" className="text-slate-400 group-hover:text-white transition-colors"></iconify-icon>
+              <span className="text-sm font-medium text-slate-400 group-hover:text-white transition-colors">Edge</span>
+            </div>
+            <div className="flex items-center gap-2 group">
+              <iconify-icon icon="simple-icons:brave" width="24" className="text-slate-400 group-hover:text-white transition-colors"></iconify-icon>
+              <span className="text-sm font-medium text-slate-400 group-hover:text-white transition-colors">Brave</span>
+            </div>
+            <div className="flex items-center gap-2 group">
+              <iconify-icon icon="simple-icons:opera" width="24" className="text-slate-400 group-hover:text-white transition-colors"></iconify-icon>
+              <span className="text-sm font-medium text-slate-400 group-hover:text-white transition-colors">Opera</span>
+            </div>
+            <div className="flex items-center gap-2 group">
+              <iconify-icon icon="lucide:globe" width="24" className="text-slate-400 group-hover:text-white transition-colors"></iconify-icon>
+              <span className="text-sm font-medium text-slate-400 group-hover:text-white transition-colors">Chromium</span>
+            </div>
+          </div>
+
+          {/* Streaming Services */}
+          <div className="flex flex-wrap justify-center gap-6 md:gap-8 max-w-5xl mx-auto">
+            {[
+              { name: 'Netflix', icon: 'simple-icons:netflix' },
+              { name: 'Prime Video', icon: 'simple-icons:amazonprime' },
+              { name: 'Disney+', icon: 'simple-icons:disneyplus' },
+              { name: 'Hulu', icon: 'simple-icons:hulu' },
+              { name: 'HBO Max', icon: 'simple-icons:hbo' },
+              { name: 'Apple TV+', icon: 'simple-icons:appletv' },
+              { name: 'YouTube', icon: 'simple-icons:youtube' },
+              { name: 'Vimeo', icon: 'simple-icons:vimeo' },
+              { name: 'Twitch', icon: 'simple-icons:twitch' },
+              { name: 'Dailymotion', icon: 'simple-icons:dailymotion' },
+            ].map((platform) => (
+              <div key={platform.name} className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/5 hover:border-[#C39EFF]/30 hover:bg-white/10 transition-all group cursor-default">
+                <iconify-icon icon={platform.icon} width="16" className="text-slate-400 group-hover:text-[#C39EFF] transition-colors"></iconify-icon>
+                <span className="text-xs font-medium text-slate-400 group-hover:text-white transition-colors">{platform.name}</span>
+              </div>
+            ))}
+          </div>
+
+          {/* Generic/Illegal Sites Note */}
+          <div className="mt-10 text-center">
+            <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-violet-500/10 to-fuchsia-500/10 border border-violet-500/20 text-xs text-slate-300 hover:border-violet-500/40 transition-colors cursor-help group">
+              <iconify-icon icon="lucide:monitor-play" width="16" className="text-[#C39EFF] group-hover:scale-110 transition-transform"></iconify-icon>
+              <span>Also works on <strong>any video streaming website</strong> (including 3rd party & unofficial sites)</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
