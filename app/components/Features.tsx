@@ -24,14 +24,14 @@ const Features = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {/* Feature 1: Auto-Detection */}
+          {/* Feature 1: Smart AI Detection */}
           <div className="group p-8 rounded-2xl border border-[#B2FFD6]/10 bg-black/50 hover:bg-[#0a0a0a] hover:border-[#C39EFF]/30 transition-all duration-300 transform hover:-translate-y-1">
             <div className="w-12 h-12 rounded-xl bg-[#B2FFD6] flex items-center justify-center mb-6 text-black shadow-lg">
-              <iconify-icon icon="lucide:scan-line" width="24" stroke-width="2"></iconify-icon>
+              <iconify-icon icon="lucide:sparkles" width="24" stroke-width="2"></iconify-icon>
             </div>
-            <h3 className="text-xl font-bold text-[#C39EFF] mb-3">AUTOMATIC TITLE DETECTION</h3>
+            <h3 className="text-xl font-bold text-[#C39EFF] mb-3">SMART AI DETECTION</h3>
             <p className="text-[#B2FFD6]/80 leading-relaxed">
-              Instantly captures movie titles from Netflix, Prime Video, Disney+, and 10+ other platforms. No manual typing required.
+              Intelligent page analysis instantly captures movie titles & genres from Netflix, Prime Video, and any other streaming site.
             </p>
           </div>
 

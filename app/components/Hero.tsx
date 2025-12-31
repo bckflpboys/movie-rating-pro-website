@@ -21,17 +21,17 @@ const Hero = () => {
 
       <div className="max-w-6xl mx-auto px-6 relative z-10">
         <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#B2FFD6]/10 border border-[#B2FFD6]/20 text-[10px] font-medium text-[#B2FFD6] mb-6 uppercase tracking-wider">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#B2FFD6]/10 border border-[#B2FFD6]/20 text-[10px] font-medium text-[#B2FFD6] mb-6 uppercase tracking-wider shadow-[0_0_10px_rgba(178,255,214,0.2)]">
             <span className="relative flex h-1.5 w-1.5">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#B2FFD6] opacity-75"></span>
               <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-[#B2FFD6]"></span>
             </span>
-            v1.0 Now Available
+            v1.0 with AI Detection
           </div>
 
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white mb-6 leading-[1.1]">
             Rate movies with <br />
-            <span className="text-[#C39EFF] drop-shadow-[0_0_8px_rgba(195,158,255,0.5)]">uncompromising precision.</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#C39EFF] to-[#B2FFD6] drop-shadow-[0_0_15px_rgba(195,158,255,0.3)]">AI-powered precision.</span>
           </h1>
 
           <div className="flex items-center justify-center gap-2 mb-6">
@@ -47,8 +47,8 @@ const Hero = () => {
             </a>
           </div>
 
-          <p className="text-lg text-[#B2FFD6] max-w-xl mx-auto leading-relaxed mb-8">
-            A powerful Chrome extension for cinephiles. Auto-detect titles, customize dark-themed rating criteria, and build your database locally.
+          <p className="text-lg text-slate-300 max-w-xl mx-auto leading-relaxed mb-8">
+            The smartest Chrome extension for cinephiles. <span className="text-[#B2FFD6]">Instantly auto-detects titles & genres</span> while you watch. Customize your rating criteria and build your database locally.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
@@ -89,7 +89,10 @@ const Hero = () => {
                   </div>
                   <div>
                     <div className="text-xs font-semibold text-white">Interstellar</div>
-                    <div className="text-[10px] text-violet-400">Auto-detected</div>
+                    <div className="text-[10px] text-[#B2FFD6] flex items-center gap-1">
+                      <iconify-icon icon="lucide:sparkles" width="10"></iconify-icon>
+                      AI Detected
+                    </div>
                   </div>
                 </div>
 
