@@ -92,6 +92,8 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         alt: 'Movie Rating Pro - Precision Cinema Scoring',
+        type: 'image/jpeg',
+        secureUrl: 'https://movie-pro.32d.one/og-image.jpg'
       },
     ],
   },
@@ -102,7 +104,15 @@ export const metadata: Metadata = {
     title: 'Movie Rating Pro - Precision Cinema Scoring',
     description: 'The ultimate tool for film enthusiasts and critics to rate movies with precision.',
     creator: '@moviepro',
-    images: ['https://movie-pro.32d.one/og-image.jpg'],
+    site: '@moviepro',
+    images: [
+      {
+        url: 'https://movie-pro.32d.one/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Movie Rating Pro - Precision Cinema Scoring'
+      }
+    ],
   },
   
   // Additional metadata
