@@ -14,6 +14,7 @@ export async function generateSitemap() {
     const routes = [
         '',
         '/how-it-works',
+        '/vs-letterboxd',
         '/privacy-policy',
         '/tos',
     ].map((route) => ({

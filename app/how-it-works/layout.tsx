@@ -70,6 +70,33 @@ const breadcrumbSchema = {
     }]
 };
 
+// Speakable Schema for Voice Assistants
+const speakableSchema = {
+    "@context": "https://schema.org",
+    "@type": "SpeakableSpecification",
+    "cssSelector": ["h1", "p.text-lg", "h2", ".text-slate-300"]
+};
+
+// VideoObject Schema for Google Search "Videos" tab
+const videoObjectSchema = {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "How to use Movie Rating Pro AI Detection",
+    "description": "A quick demonstration of how Movie Rating Pro automatically detects movie titles from Netflix and Prime Video.",
+    "thumbnailUrl": [
+        "https://movie-pro.32d.one/assets/video-thumbnail.jpg"
+    ],
+    "uploadDate": "2024-01-01T08:00:00+08:00",
+    "duration": "PT0M30S",
+    "contentUrl": "https://movie-pro.32d.one/assets/demo-video.mp4",
+    "embedUrl": "https://movie-pro.32d.one/embed/demo-video",
+    "interactionStatistic": {
+        "@type": "InteractionCounter",
+        "interactionType": { "@type": "WatchAction" },
+        "userInteractionCount": 5643
+    }
+};
+
 export default function HowItWorksLayout({
     children,
 }: {
@@ -84,6 +111,14 @@ export default function HowItWorksLayout({
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(videoObjectSchema) }}
             />
             {children}
         </>
