@@ -37,6 +37,7 @@ const Navbar = ({ isBannerVisible }: NavbarProps) => {
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-[#B2FFD6]">
           <a href="/#features" className="hover:text-[#C39EFF] transition-colors">Features</a>
           <a href="/how-it-works" className="hover:text-[#C39EFF] transition-colors">How it Works</a>
+          <a href="/vs-letterboxd" className="hover:text-[#C39EFF] transition-colors text-[#00E054]">vs Letterboxd</a>
           <a href="#privacy" className="hover:text-[#C39EFF] transition-colors">Privacy</a>
         </div>
 
@@ -65,6 +66,7 @@ const Navbar = ({ isBannerVisible }: NavbarProps) => {
           <div className="flex flex-col gap-4 text-base font-medium text-[#B2FFD6]">
             <a href="/#features" className="hover:text-[#C39EFF] transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Features</a>
             <a href="/how-it-works" className="hover:text-[#C39EFF] transition-colors" onClick={() => setIsMobileMenuOpen(false)}>How it Works</a>
+            <a href="/vs-letterboxd" className="hover:text-[#C39EFF] transition-colors text-[#00E054]" onClick={() => setIsMobileMenuOpen(false)}>vs Letterboxd</a>
             <a href="#privacy" className="hover:text-[#C39EFF] transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Privacy</a>
           </div>
 

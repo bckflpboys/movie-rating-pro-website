@@ -7,6 +7,7 @@ import CreatorShowcase from "./components/CreatorShowcase";
 import CTA from "./components/CTA";
 import Footer from "./components/Footer";
 import PromoPopup from "./components/PromoPopup";
+import VsLetterboxdSection from "./components/VsLetterboxdSection";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <HeaderWrapper />
       <Hero />
       <Features />
+      <VsLetterboxdSection />
       <DeepDive />
       <UseCases />
       <CreatorShowcase />
