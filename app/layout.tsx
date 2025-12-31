@@ -176,7 +176,7 @@ export const metadata: Metadata = {
 };
 
 // FAQ Schema for better AEO
-export function FaqSchema() {
+function FaqSchema() {
   return (
     <script
       type="application/ld+json"
