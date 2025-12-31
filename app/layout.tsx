@@ -27,7 +27,12 @@ const jsonLd = {
   "author": {
     "@type": "Organization",
     "name": "Devaura",
-    "url": "https://devaura.co.za"
+    "url": "https://devaura.co.za",
+    "sameAs": [
+      "https://twitter.com/devaura_co",
+      "https://github.com/devaura",
+      "https://linkedin.com/company/devaura"
+    ]
   },
   "offers": {
     "@type": "Offer",

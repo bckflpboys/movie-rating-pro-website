@@ -53,6 +53,23 @@ const howToSchema = {
     ]
 };
 
+// Breadcrumb Schema for better navigation structure
+const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://movie-pro.32d.one"
+    }, {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "How It Works",
+        "item": "https://movie-pro.32d.one/how-it-works"
+    }]
+};
+
 export default function HowItWorksLayout({
     children,
 }: {
@@ -63,6 +80,10 @@ export default function HowItWorksLayout({
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
             />
             {children}
         </>
