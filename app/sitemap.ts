@@ -1,28 +1,20 @@
-import { Metadata, Route } from 'next';
+import { MetadataRoute } from 'next';
 
 const BASE_URL = 'https://movie-pro.32d.one';
 
-export default function sitemap(): Metadata {
-    return {
-        alternates: {
-            canonical: BASE_URL,
-        },
-    };
-}
-
-export async function generateSitemap() {
+export default function sitemap(): MetadataRoute.Sitemap {
     const routes = [
         '',
         '/how-it-works',
         '/vs-letterboxd',
         '/privacy-policy',
         '/tos',
-    ].map((route) => ({
+    ];
+
+    return routes.map((route) => ({
         url: `${BASE_URL}${route}`,
-        lastModified: new Date().toISOString().split('T')[0],
+        lastModified: new Date(),
         changeFrequency: 'weekly',
         priority: route === '' ? 1.0 : 0.8,
     }));
-
-    return routes;
 }
