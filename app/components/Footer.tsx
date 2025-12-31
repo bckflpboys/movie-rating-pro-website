@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 declare global {
   namespace JSX {
@@ -45,7 +46,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 pb-6 border-b border-white/5">
           <div className="flex items-center gap-3">
             <a href="/" className="block">
-              <img src="/mrp web logo.png" alt="Movie Rating Pro" className="h-8 w-auto" />
+              <Image src="/mrp web logo.png" alt="Movie Rating Pro" width={128} height={32} className="h-8 w-auto" />
             </a>
             <span className="text-sm font-medium text-[#B2FFD6]/80">© 2025 MOVIE RATING PRO</span>
           </div>

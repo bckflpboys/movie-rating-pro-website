@@ -33,7 +33,7 @@ const VsLetterboxdSection = () => {
                         </h2>
 
                         <p className="text-lg text-slate-400 mb-8 leading-relaxed">
-                            Stop manually searching for movies. Movie Rating Pro uses AI to auto-detect what you're watching and lets you rate with unlimited custom fields—all while keeping your data 100% private.
+                            Stop manually searching for movies. Movie Rating Pro uses AI to auto-detect what you&apos;re watching and lets you rate with unlimited custom fields—all while keeping your data 100% private.
                         </p>
 
                         <div className="flex flex-col gap-4 mb-8">
