@@ -24,10 +24,10 @@ const HowItWorks = () => {
     const features = [
         {
             id: 'detection',
-            title: 'Auto-Detection',
+            title: 'AI Auto-Detection',
             icon: 'lucide:sparkles',
             color: 'from-violet-500 to-purple-500',
-            description: 'Automatic movie title detection from streaming platforms',
+            description: 'Smart AI-powered title & genre detection from streaming platforms',
         },
         {
             id: 'trending',
@@ -141,13 +141,13 @@ const HowItWorks = () => {
                             <div>
                                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-violet-500/10 border border-violet-500/20 text-xs font-medium text-violet-300 mb-4">
                                     <iconify-icon icon="lucide:sparkles" width="12"></iconify-icon>
-                                    Intelligent Detection
+                                    AI-Powered Detection
                                 </div>
                                 <h2 className="text-4xl font-bold text-white mb-6">
-                                    Automatic Title Detection
+                                    Smart AI Title Detection
                                 </h2>
                                 <p className="text-lg text-slate-300 mb-6 leading-relaxed">
-                                    Movie Rating Pro automatically detects movie titles from streaming platforms and video websites, saving you time and ensuring accuracy.
+                                    Movie Rating Pro uses advanced AI algorithms to instantly analyze the DOM of streaming platforms, detecting movie titles and genres with near-perfect accuracy.
                                 </p>
                                 <div className="space-y-4">
                                     <div className="flex items-start gap-3">
@@ -602,7 +602,7 @@ const HowItWorks = () => {
                                 </p>
                                 <div className="flex items-center gap-2 text-xs text-fuchsia-400">
                                     <iconify-icon icon="lucide:sparkles" width="14"></iconify-icon>
-                                    Title auto-detects automatically
+                                    AI detects title & genre automatically
                                 </div>
                             </div>
                         </div>
