@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 declare global {
   namespace JSX {
@@ -30,7 +31,7 @@ const Navbar = ({ isBannerVisible }: NavbarProps) => {
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <div className="flex items-center gap-4">
           <a href="/" className="block">
-            <img src="/mrp web logo.png" alt="Movie Rating Pro" className="h-14 w-auto" />
+            <Image src="/mrp web logo.png" alt="Movie Rating Pro" width={160} height={56} className="h-14 w-auto" />
           </a>
         </div>
 

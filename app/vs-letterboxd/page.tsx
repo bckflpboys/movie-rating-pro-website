@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import HeaderWrapper from '../components/HeaderWrapper';
 import Footer from '../components/Footer';
 import PromoPopup from '../components/PromoPopup';
@@ -49,7 +50,7 @@ const ComparisonPage = () => {
                         <div className="grid grid-cols-3 border-b border-white/10 bg-[#151520]">
                             <div className="p-6 text-sm font-semibold text-slate-400 flex items-center">Feature</div>
                             <div className="p-6 text-lg font-bold text-white flex items-center gap-3 border-l border-white/5 bg-[#1A1A24]">
-                                <img src="/mrp-logo-text.png" alt="MRP" className="w-6 h-6 object-contain" />
+                                <Image src="/mrp-logo-text.png" alt="MRP" width={24} height={24} className="w-6 h-6 object-contain" />
                                 Movie Rating Pro
                             </div>
                             <div className="p-6 text-lg font-bold text-[#00E054] flex items-center gap-3 border-l border-white/5 bg-[#14181C]">
@@ -143,7 +144,7 @@ const ComparisonPage = () => {
                             <div className="p-6 rounded-xl bg-[#1A1A24] border border-[#C39EFF]/30 text-left relative overflow-hidden">
                                 <div className="absolute top-0 right-0 w-16 h-16 bg-[#C39EFF]/10 blur-xl rounded-full"></div>
                                 <h3 className="text-[#C39EFF] font-bold mb-2 flex items-center gap-2">
-                                    <img src="/mrp-logo-text.png" alt="" className="w-4 h-4" />
+                                    <Image src="/mrp-logo-text.png" alt="" width={16} height={16} className="w-4 h-4" />
                                     Movie Rating Pro is best for...
                                 </h3>
                                 <p className="text-slate-300 text-sm">Serious tracking, detailed analysis, privacy, and automated convenience while watching.</p>
