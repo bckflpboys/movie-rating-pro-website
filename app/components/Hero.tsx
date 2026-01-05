@@ -52,10 +52,10 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
-            <button className="w-full sm:w-auto h-12 px-8 rounded-full bg-[#C39EFF] hover:bg-[#9b7ecc] text-black text-sm font-bold transition-all flex items-center justify-center gap-2 shadow-lg shadow-[#C39EFF]/30">
+            <a href="https://chromewebstore.google.com/detail/movie-rating-pro/onpnnalhfpdbjfnlhgeekehfndpijbkf" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto h-12 px-8 rounded-full bg-[#C39EFF] hover:bg-[#9b7ecc] text-black text-sm font-bold transition-all flex items-center justify-center gap-2 shadow-lg shadow-[#C39EFF]/30">
               <span>Install Extension</span>
               <iconify-icon icon="lucide:arrow-right" width="16" stroke-width="2.5"></iconify-icon>
-            </button>
+            </a>
             <a href="https://github.com/bckflpboys/movie-rating-pro#readme" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto h-12 px-8 rounded-full bg-black border border-[#C39EFF]/30 text-[#B2FFD6] text-sm font-medium hover:bg-[#0a0a0a] hover:border-[#C39EFF]/50 transition-all flex items-center justify-center">
               View Documentation
             </a>

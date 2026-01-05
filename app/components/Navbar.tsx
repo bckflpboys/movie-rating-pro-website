@@ -39,17 +39,17 @@ const Navbar = ({ isBannerVisible }: NavbarProps) => {
           <a href="/#features" className="hover:text-[#C39EFF] transition-colors">Features</a>
           <a href="/how-it-works" className="hover:text-[#C39EFF] transition-colors">How it Works</a>
           <a href="/vs-letterboxd" className="hover:text-[#C39EFF] transition-colors text-[#00E054]">vs Letterboxd</a>
-          <a href="#privacy" className="hover:text-[#C39EFF] transition-colors">Privacy</a>
+          <a href="/privacy-policy" className="hover:text-[#C39EFF] transition-colors">Privacy</a>
         </div>
 
         <div className="flex items-center gap-4">
           <a href="https://github.com/bckflpboys/movie-rating-pro" target="_blank" rel="noopener noreferrer" className="hidden sm:flex text-[#B2FFD6] hover:text-[#FFB2E6] transition-colors">
             <iconify-icon icon="lucide:github" width="22" stroke-width="1.5"></iconify-icon>
           </a>
-          <button className="hidden sm:flex bg-[#C39EFF] hover:bg-[#9b7ecc] text-black text-sm font-bold px-5 py-2.5 rounded-full transition-all items-center gap-2">
+          <a href="https://chromewebstore.google.com/detail/movie-rating-pro/onpnnalhfpdbjfnlhgeekehfndpijbkf" target="_blank" rel="noopener noreferrer" className="hidden sm:flex bg-[#C39EFF] hover:bg-[#9b7ecc] text-black text-sm font-bold px-5 py-2.5 rounded-full transition-all items-center gap-2">
             <iconify-icon icon="lucide:chrome" width="16" stroke-width="1.5"></iconify-icon>
             Add to Chrome
-          </button>
+          </a>
 
           {/* Mobile Menu Button */}
           <button
@@ -78,10 +78,10 @@ const Navbar = ({ isBannerVisible }: NavbarProps) => {
               <iconify-icon icon="lucide:github" width="20" stroke-width="1.5"></iconify-icon>
               <span>View on GitHub</span>
             </a>
-            <button className="bg-[#C39EFF] hover:bg-[#9b7ecc] text-black text-sm font-bold px-5 py-3 rounded-full transition-all flex items-center justify-center gap-2 w-full">
+            <a href="https://chromewebstore.google.com/detail/movie-rating-pro/onpnnalhfpdbjfnlhgeekehfndpijbkf" target="_blank" rel="noopener noreferrer" className="bg-[#C39EFF] hover:bg-[#9b7ecc] text-black text-sm font-bold px-5 py-3 rounded-full transition-all flex items-center justify-center gap-2 w-full">
               <iconify-icon icon="lucide:chrome" width="16" stroke-width="1.5"></iconify-icon>
               Add to Chrome
-            </button>
+            </a>
           </div>
         </div>
       )}

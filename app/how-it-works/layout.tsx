@@ -120,6 +120,49 @@ export default function HowItWorksLayout({
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(videoObjectSchema) }}
             />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        "mainEntity": [
+                            {
+                                "@type": "Question",
+                                "name": "Does Movie Rating Pro work on all streaming sites?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Yes, the extension is designed to work on major platforms like Netflix, Prime Video, and Disney+. For unsupported sites, you can manually enter the movie title."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Is my data private?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Absolutely. All your ratings and data are stored locally on your device. We do not track your viewing habits or collect personal information."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Can I export my ratings?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Yes, you can export your entire rating history to a CSV file, which is compatible with Excel, Google Sheets, and other spreadsheet software."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Is the extension free?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Yes, Movie Rating Pro is 100% free and open-source. There are no hidden costs or premium subscriptions."
+                                }
+                            }
+                        ]
+                    })
+                }}
+            />
             {children}
         </>
     );

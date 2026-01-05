@@ -28,10 +28,10 @@ const CTA = () => {
           Join thousands of users rating movies with precision. Open source, private, and free.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-          <button className="h-12 px-8 rounded-full bg-[#C39EFF] hover:bg-[#9b7ecc] text-black text-sm font-bold transition-all flex items-center gap-2 shadow-lg shadow-[#C39EFF]/30 transform hover:scale-105">
+          <a href="https://chromewebstore.google.com/detail/movie-rating-pro/onpnnalhfpdbjfnlhgeekehfndpijbkf" target="_blank" rel="noopener noreferrer" className="h-12 px-8 rounded-full bg-[#C39EFF] hover:bg-[#9b7ecc] text-black text-sm font-bold transition-all flex items-center gap-2 shadow-lg shadow-[#C39EFF]/30 transform hover:scale-105">
             <iconify-icon icon="lucide:download" width="18" stroke-width="2"></iconify-icon>
             DOWNLOAD FOR CHROME
-          </button>
+          </a>
           <a href="https://github.com/bckflpboys/movie-rating-pro" target="_blank" rel="noopener noreferrer" className="h-12 px-8 rounded-full bg-transparent border border-[#C39EFF]/30 text-[#B2FFD6] text-sm font-medium hover:bg-[#C39EFF]/10 hover:border-[#C39EFF]/50 transition-all flex items-center gap-2">
             <iconify-icon icon="lucide:github" width="18" stroke-width="2"></iconify-icon>
             STAR ON GITHUB

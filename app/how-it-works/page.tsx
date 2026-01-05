@@ -668,6 +668,46 @@ const HowItWorks = () => {
                 </div>
             </section>
 
+            {/* FAQ Section for AEO */}
+            <section className="py-20 relative bg-[#0B0A13]">
+                <div className="max-w-4xl mx-auto px-6">
+                    <div className="text-center mb-12">
+                        <h2 className="text-3xl font-bold text-white mb-4">
+                            Frequently Asked Questions
+                        </h2>
+                        <p className="text-slate-400">
+                            Common questions about using Movie Rating Pro
+                        </p>
+                    </div>
+
+                    <div className="space-y-4">
+                        {[
+                            {
+                                q: "Does Movie Rating Pro work on all streaming sites?",
+                                a: "Yes, the extension is designed to work on major platforms like Netflix, Prime Video, and Disney+. For unsupported sites, you can manually enter the movie title."
+                            },
+                            {
+                                q: "Is my data private?",
+                                a: "Absolutely. All your ratings and data are stored locally on your device. We do not track your viewing habits or collect personal information."
+                            },
+                            {
+                                q: "Can I export my ratings?",
+                                a: "Yes, you can export your entire rating history to a CSV file, which is compatible with Excel, Google Sheets, and other spreadsheet software."
+                            },
+                            {
+                                q: "Is the extension free?",
+                                a: "Yes, Movie Rating Pro is 100% free and open-source. There are no hidden costs or premium subscriptions."
+                            }
+                        ].map((faq, idx) => (
+                            <div key={idx} className="p-6 rounded-xl bg-[#0F0E17] border border-white/5 hover:border-[#C39EFF]/30 transition-all">
+                                <h3 className="text-lg font-semibold text-white mb-2">{faq.q}</h3>
+                                <p className="text-sm text-slate-300 leading-relaxed">{faq.a}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
             {/* CTA Section */}
             <section className="py-20 relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-violet-600/10 to-fuchsia-600/10"></div>
@@ -679,13 +719,13 @@ const HowItWorks = () => {
                         Install Movie Rating Pro today and build your personalized movie database with uncompromising precision.
                     </p>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                        <button className="h-12 px-8 rounded-full bg-[#C39EFF] hover:bg-[#9b7ecc] text-black text-sm font-bold transition-all flex items-center gap-2 shadow-lg shadow-[#C39EFF]/30">
+                        <a href="https://chromewebstore.google.com/detail/movie-rating-pro/onpnnalhfpdbjfnlhgeekehfndpijbkf" target="_blank" rel="noopener noreferrer" className="h-12 px-8 rounded-full bg-[#C39EFF] hover:bg-[#9b7ecc] text-black text-sm font-bold transition-all flex items-center gap-2 shadow-lg shadow-[#C39EFF]/30">
                             <iconify-icon icon="lucide:download" width="16"></iconify-icon>
                             <span>Install Extension</span>
-                        </button>
-                        <button className="h-12 px-8 rounded-full bg-black border border-[#C39EFF]/30 text-[#B2FFD6] text-sm font-medium hover:bg-[#0a0a0a] hover:border-[#C39EFF]/50 transition-all">
+                        </a>
+                        <a href="https://github.com/bckflpboys/movie-rating-pro" target="_blank" rel="noopener noreferrer" className="h-12 px-8 rounded-full bg-black border border-[#C39EFF]/30 text-[#B2FFD6] text-sm font-medium hover:bg-[#0a0a0a] hover:border-[#C39EFF]/50 transition-all flex items-center justify-center">
                             View on GitHub
-                        </button>
+                        </a>
                     </div>
                 </div>
             </section>
